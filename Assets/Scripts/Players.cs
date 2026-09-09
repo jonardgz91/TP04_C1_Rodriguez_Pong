@@ -1,36 +1,59 @@
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class Players : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    [SerializeField] private KeyCode moveUp;
-    [SerializeField] private KeyCode moveDown;
-    [SerializeField] public Rigidbody2D player;
-
+    [SerializeField] private PlayerDataSo player;
+    [SerializeField] public Rigidbody2D rbPlayers;
+    public float moveSpeed = 100f;
+    private SpriteRenderer spriteRenderer;
+    
     private void Awake()
     {
-        player = GetComponent<Rigidbody2D>();
+        rbPlayers = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+    }
+
+    private void Start()
+    {
+        SetVerticalSize(player.verticalSize);
+        moveSpeed = player.moveSpeed;
+        spriteRenderer.color = player.color;
+    }
+    private void Update()
+    {
+        SetVerticalSize(player.verticalSize);
+        moveSpeed = player.moveSpeed;
+        spriteRenderer.color = player.color;
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(moveUp))
+        if (Input.GetKey(player.moveUp))
         {
-            //player.position += (new Vector2(0, moveSpeed * Time.fixedDeltaTime));
-            player.AddForce(new Vector2(0, moveSpeed * Time.fixedDeltaTime));
+            rbPlayers.AddForce(new Vector2(0, moveSpeed * Time.fixedDeltaTime));
         }
 
-        if (Input.GetKey(moveDown))
+        if (Input.GetKey(player.moveDown))
         {
-            //player.position += (new Vector2(0, -moveSpeed * Time.fixedDeltaTime));
-            player.AddForce(new Vector2(0, -moveSpeed * Time.fixedDeltaTime));
+            rbPlayers.AddForce(new Vector2(0, -moveSpeed * Time.fixedDeltaTime));
+        }
+
+        if (Input.GetKey(player.moveRight))
+        {
+            rbPlayers.AddForce(new Vector2(moveSpeed * Time.fixedDeltaTime, 0));
+        }
+
+        if (Input.GetKey(player.moveLeft))
+        {
+            rbPlayers.AddForce(new Vector2(-moveSpeed * Time.fixedDeltaTime, 0));
         }
     }
 
-    public void SetVerticalSize(float newSize)
+    public void SetVerticalSize(float verticalSize)
     {
         Vector3 scale = transform.localScale;
-        scale.y = newSize;
+        scale.y = verticalSize;
         transform.localScale = scale;
     }
 }

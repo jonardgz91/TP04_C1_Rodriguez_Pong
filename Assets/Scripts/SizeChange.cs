@@ -4,9 +4,8 @@ using UnityEngine.UI;
 
 public class SizeChange : MonoBehaviour
 {
-    [SerializeField] private Move player1;
-    [SerializeField] private Move player2;
-
+    [SerializeField] private PlayerDataSo player1;
+    [SerializeField] private PlayerDataSo player2;
     [SerializeField] private TMP_Text textChangeSize;
     [SerializeField] private Slider player1Size;
     [SerializeField] private TMP_Text textPlayer1Size;
@@ -24,8 +23,8 @@ public class SizeChange : MonoBehaviour
 
     private void OnEnable()
     {
-        player1Size.value = player1.transform.localScale.y;
-        player2Size.value = player2.transform.localScale.y;
+        player1Size.value = player1.verticalSize;
+        player2Size.value = player2.verticalSize;
     }
 
     private void Start()
@@ -40,11 +39,11 @@ public class SizeChange : MonoBehaviour
         textPlayer2Size.text = "Tamaño del jugador 2";
         textPlayer2Size.alignment = TextAlignmentOptions.Center;
 
-        player1Size.value = player1.transform.localScale.y;
-        textSizeOfPlayer1.text = player1.transform.localScale.y.ToString("F1");
+        player1Size.value = player1.verticalSize;
+        textSizeOfPlayer1.text = player1.verticalSize.ToString("F1");
 
-        player2Size.value = player2.transform.localScale.y;
-        textSizeOfPlayer2.text = player2.transform.localScale.y.ToString("F1");
+        player2Size.value = player2.verticalSize;
+        textSizeOfPlayer2.text = player2.verticalSize.ToString("F1");
     }
 
     private void OnDestroy()
@@ -55,13 +54,13 @@ public class SizeChange : MonoBehaviour
 
     private void OnPlayer1SizeChange(float value)
     {
-        player1.SetVerticalSize(value);
+        player1.verticalSize = value;
         textSizeOfPlayer1.text = value.ToString("F1");
     }
 
     private void OnPlayer2SizeChange(float value)
     {
-        player2.SetVerticalSize(value);
+        player2.verticalSize = value;
         textSizeOfPlayer2.text = value.ToString("F1");
     }
 }

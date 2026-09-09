@@ -1056,9 +1056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745954a25d88bd149b2b43614f164d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedChange
-  player1: {fileID: 0}
-  player2: {fileID: 0}
   moveSpeed: 5
+  player1: {fileID: 11400000, guid: 6224929a1175cb942b9fbd7ac59972d7, type: 2}
+  player2: {fileID: 11400000, guid: dab4842cccf2cfa49bfb6488ad041486, type: 2}
   textChangeSpeed: {fileID: 7435204186687689473}
   player1Speed: {fileID: 5939202237342845280}
   textPlayer1Speed: {fileID: 8041889991177467241}
@@ -1298,8 +1298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3935454ed9f36458d31c20a1abc49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SizeChange
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 11400000, guid: 6224929a1175cb942b9fbd7ac59972d7, type: 2}
+  player2: {fileID: 11400000, guid: dab4842cccf2cfa49bfb6488ad041486, type: 2}
   textChangeSize: {fileID: 636678121365032578}
   player1Size: {fileID: 1624645785282920393}
   textPlayer1Size: {fileID: 8613363434770394347}
@@ -4192,16 +4192,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d4caaf81d018143b534dd5e39cdaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorChange
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 11400000, guid: 6224929a1175cb942b9fbd7ac59972d7, type: 2}
+  player2: {fileID: 11400000, guid: dab4842cccf2cfa49bfb6488ad041486, type: 2}
   player1ChangeColor: {fileID: 8338510496707616393}
   textPlayer1OverColor: {fileID: 8057913797297293301}
   textP1ChangeColorBtn: {fileID: 8942566880294963598}
   player2ChangeColor: {fileID: 3565158870040158208}
   textPlayer2OverColor: {fileID: 7231348232018992518}
   textP2ChangeColorBtn: {fileID: 5158189082643444921}
-  srPlayer1: {fileID: 0}
-  srPlayer2: {fileID: 0}
 --- !u!1 &8551302149722530024
 GameObject:
   m_ObjectHideFlags: 0
