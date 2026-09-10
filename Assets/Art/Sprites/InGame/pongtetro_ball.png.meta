@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e5d7ee216d55db409fd83d30ef6ed10
+guid: 009a3d9683d05154f95ea027e19ac362
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -844773298834026925
-    second: menu_bg_0
+      213: 6487500206685686767
+    second: pongtetro_ball_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu_bg_0
+      name: pongtetro_ball_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 23
+        y: 23
+        width: 274
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e43471923c644f0800000000000000
-      internalID: -844773298834026925
+      spriteID: feb06c3d01b380a50800000000000000
+      internalID: 6487500206685686767
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menu_bg_0: -844773298834026925
+      pongtetro_ball_0: 6487500206685686767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

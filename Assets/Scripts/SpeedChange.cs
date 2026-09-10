@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class SpeedChange : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 100f;
     [SerializeField] private PlayerDataSo player1;
     [SerializeField] private PlayerDataSo player2;
     [SerializeField] private TMP_Text textChangeSpeed;

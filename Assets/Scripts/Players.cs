@@ -4,14 +4,14 @@ public class Players : MonoBehaviour
 {
     [SerializeField] private PlayerDataSo player;
     [SerializeField] public Rigidbody2D rbPlayers;
+    public float maxPlayerSpeed = 1000f;
     public float moveSpeed = 100f;
     private SpriteRenderer spriteRenderer;
-    
+
     private void Awake()
     {
         rbPlayers = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
 
     private void Start()
@@ -50,7 +50,7 @@ public class Players : MonoBehaviour
         }
     }
 
-    public void SetVerticalSize(float verticalSize)
+    public void SetVerticalSize(float verticalSize) 
     {
         Vector3 scale = transform.localScale;
         scale.y = verticalSize;
