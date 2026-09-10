@@ -9,7 +9,7 @@ public class BackBtn : MonoBehaviour
     [SerializeField] GameObject settingsMenu;
     [SerializeField] private Button backBtn;
     [SerializeField] private TMP_Text textBackBtn;
-    private int fontSizeBtns = 30;
+    private int fontSizeBtns = 50;
 
     private void Awake()
     {

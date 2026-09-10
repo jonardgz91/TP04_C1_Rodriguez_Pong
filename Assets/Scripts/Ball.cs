@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MoveBall : MonoBehaviour
 {
+    [SerializeField] private Players player1;
+    [SerializeField] private Players player2;
     [SerializeField] private PlayersScore playersScore;
     [SerializeField] private GameSettingsSo gameSettings;
     [SerializeField] private Rigidbody2D ball;
@@ -81,5 +83,7 @@ public class MoveBall : MonoBehaviour
         dirY = -dirY;
         waitContinue = true;
         Time.timeScale = 0;
+        player1.ResetPosition();
+        player2.ResetPosition();
     }
 }

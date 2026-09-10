@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07eac4ebc2755924799c1ff4275d54e0, type: 3}
   m_Name: PlayerData P2
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDataSo
-  moveSpeed: 100
-  verticalSize: 2
+  moveSpeed: 500
+  verticalSize: 1
   moveUp: 273
   moveDown: 274
   moveRight: 275
   moveLeft: 276
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}

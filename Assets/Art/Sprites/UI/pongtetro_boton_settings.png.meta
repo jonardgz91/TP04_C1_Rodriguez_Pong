@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f1d7d5740f985a64f808228654ea8ec0
+guid: 9027e95f885a10a45b26badb5da047e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6408110159337595166
-    second: brick_high_6_0
+      213: -3344577497257348915
+    second: pongtetro_boton_settings_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brick_high_6_0
+      name: pongtetro_boton_settings_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 384
-        height: 128
+        width: 440
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ee5c1ff2c1d117a0800000000000000
-      internalID: -6408110159337595166
+      spriteID: dc0f5309c7ca591d0800000000000000
+      internalID: -3344577497257348915
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      brick_high_6_0: -6408110159337595166
+      pongtetro_boton_settings_0: -3344577497257348915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

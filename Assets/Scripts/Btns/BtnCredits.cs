@@ -8,7 +8,7 @@ public class BtnCredits : MonoBehaviour
     [SerializeField] GameObject creditsMenu;
     [SerializeField] Button creditsBtn;
     [SerializeField] TMP_Text textCreditsBtn;
-    private int fontSizeBtns = 30;
+    private int fontSizeBtns = 40;
 
     private void Awake()
     {

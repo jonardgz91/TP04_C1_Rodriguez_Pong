@@ -8,7 +8,7 @@ public class BtnSettings : MonoBehaviour
     [SerializeField] GameObject settingsMenu;
     [SerializeField] Button settingsMenuBtn;
     [SerializeField] TMP_Text textSettingsMenu;
-    private int fontSizeBtns = 30;
+    private int fontSizeBtns = 45;
 
     private void Awake()
     {

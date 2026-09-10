@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerDataSo : ScriptableObject
 {
     [Header("Valores iniciales")]
-    [Range(100, 1000)] public float moveSpeed = 100f;
+    [Range(1, 10)] public float moveSpeed = 5f;
     [Range(1, 7)] public float verticalSize = 2f;
 
     [Header("Movimiento")]

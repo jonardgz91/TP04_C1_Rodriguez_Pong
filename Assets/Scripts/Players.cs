@@ -4,14 +4,20 @@ public class Players : MonoBehaviour
 {
     [SerializeField] private PlayerDataSo player;
     [SerializeField] public Rigidbody2D rbPlayers;
-    public float maxPlayerSpeed = 1000f;
-    public float moveSpeed = 100f;
+    //public float maxPlayerSpeed = 10f;
+    public float moveSpeed = 2f;
     private SpriteRenderer spriteRenderer;
+    private Vector3 playerStartPosition;
+    [SerializeField] private float minX = -8.5f;
+    [SerializeField] private float maxX = 0f;
+    [SerializeField] private float minY = -4.5f;
+    [SerializeField] private float maxY = 4.5f;
 
     private void Awake()
     {
         rbPlayers = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerStartPosition = transform.position;
     }
 
     private void Start()
@@ -19,6 +25,7 @@ public class Players : MonoBehaviour
         SetVerticalSize(player.verticalSize);
         moveSpeed = player.moveSpeed;
         spriteRenderer.color = player.color;
+
     }
     private void Update()
     {
@@ -31,23 +38,32 @@ public class Players : MonoBehaviour
     {
         if (Input.GetKey(player.moveUp))
         {
-            rbPlayers.AddForce(new Vector2(0, moveSpeed * Time.fixedDeltaTime));
+            rbPlayers.linearVelocity += (new Vector2(0, moveSpeed * Time.fixedDeltaTime));
         }
 
         if (Input.GetKey(player.moveDown))
         {
-            rbPlayers.AddForce(new Vector2(0, -moveSpeed * Time.fixedDeltaTime));
+            rbPlayers.linearVelocity += (new Vector2(0, -moveSpeed * Time.fixedDeltaTime));
         }
 
         if (Input.GetKey(player.moveRight))
         {
-            rbPlayers.AddForce(new Vector2(moveSpeed * Time.fixedDeltaTime, 0));
+            rbPlayers.linearVelocity += (new Vector2(moveSpeed * Time.fixedDeltaTime, 0));
         }
 
         if (Input.GetKey(player.moveLeft))
         {
-            rbPlayers.AddForce(new Vector2(-moveSpeed * Time.fixedDeltaTime, 0));
+            rbPlayers.linearVelocity += (new Vector2(-moveSpeed * Time.fixedDeltaTime, 0));
         }
+
+        Vector2 pos = rbPlayers.position;
+
+        if (pos.x > maxX) pos.x = maxX;
+        if (pos.x < minX) pos.x = minX;
+        if (pos.y > maxY) pos.y = maxY;
+        if (pos.y < minY) pos.y = minY;
+
+        rbPlayers.position = pos;
     }
 
     public void SetVerticalSize(float verticalSize) 
@@ -55,5 +71,11 @@ public class Players : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.y = verticalSize;
         transform.localScale = scale;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = playerStartPosition;
+        rbPlayers.linearVelocity = Vector2.zero;
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd40b5ab79d951341a850bc6df1cf959
+guid: d750d7075572d5b47926e772b892d1f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4987036996929423577
-    second: rectbtn_green_0
+      213: 8004308708910278240
+    second: pongtetro_boton_start_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rectbtn_green_0
+      name: pongtetro_boton_start_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 416
-        height: 126
+        x: 0
+        y: 0
+        width: 440
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d885bbe9b3853540800000000000000
-      internalID: 4987036996929423577
+      spriteID: 066a923bc54051f60800000000000000
+      internalID: 8004308708910278240
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rectbtn_green_0: 4987036996929423577
+      pongtetro_boton_start_0: 8004308708910278240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ public class UIBackBtn : MonoBehaviour
 {
     [SerializeField] Button quitBtn;
     [SerializeField] TMP_Text textQuitBtn;
-    private int fontSizeBtns = 30;
+    private int fontSizeBtns = 50;
 
     private void Awake()
     {

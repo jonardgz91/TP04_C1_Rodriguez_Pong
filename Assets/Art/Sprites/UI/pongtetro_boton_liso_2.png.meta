@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6afc8fb84656d1046a1e60b08999807f
+guid: dded31216e641d94f81a0a440a4aec1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4774131547510294472
-    second: rectbtn_yellow_0
+      213: 8857862559768810220
+    second: pongtetro_boton_liso_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rectbtn_yellow_0
+      name: pongtetro_boton_liso_2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 416
-        height: 126
+        x: 0
+        y: 0
+        width: 440
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838b9a7e6a0eebdb0800000000000000
-      internalID: -4774131547510294472
+      spriteID: ce2904031137dea70800000000000000
+      internalID: 8857862559768810220
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      rectbtn_yellow_0: -4774131547510294472
+      pongtetro_boton_liso_2_0: 8857862559768810220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

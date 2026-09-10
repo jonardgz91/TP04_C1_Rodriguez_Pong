@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4ef3fa2ba43334d4d94bcffd795b47bf
+guid: 1bb6d7ba3911a144ab6e0f8d25566510
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1848897553396990183
-    second: pong_lego_bg_0
+      213: -6318905780199166721
+    second: pongtetro_boton_creditos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pong_lego_bg_0
+      name: pongtetro_boton_creditos_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 720
+        width: 440
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91ffea798756756e0800000000000000
-      internalID: -1848897553396990183
+      spriteID: ffce0120cacbe48a0800000000000000
+      internalID: -6318905780199166721
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pong_lego_bg_0: -1848897553396990183
+      pongtetro_boton_creditos_0: -6318905780199166721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
