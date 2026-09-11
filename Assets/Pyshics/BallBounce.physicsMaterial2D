@@ -8,7 +8,7 @@ PhysicsMaterial2D:
   m_PrefabAsset: {fileID: 0}
   m_Name: BallBounce
   serializedVersion: 2
-  friction: 1
-  bounciness: 1.05
+  friction: 0
+  bounciness: 1.005
   m_FrictionCombine: 4
   m_BounceCombine: 4

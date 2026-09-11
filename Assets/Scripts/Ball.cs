@@ -16,6 +16,7 @@ public class MoveBall : MonoBehaviour
     private float ballSpeed = 7f;
     private float dirX = -1f;
     private float dirY = 1f;
+    private float sameDirY;
     private bool waitContinue = false;
     private float timeLeft;
 
@@ -39,7 +40,7 @@ public class MoveBall : MonoBehaviour
         }
 
         timeLeft -= Time.deltaTime;
-        textTimer.text = ((int)timeLeft).ToString();
+        textTimer.text = Mathf.Clamp(timeLeft, 0, gameSettings.timer).ToString("F2");
 
         if (timeLeft <= 0)
         {

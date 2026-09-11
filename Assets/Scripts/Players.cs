@@ -57,12 +57,8 @@ public class Players : MonoBehaviour
         }
 
         Vector2 pos = rbPlayers.position;
-
-        if (pos.x > maxX) pos.x = maxX;
-        if (pos.x < minX) pos.x = minX;
-        if (pos.y > maxY) pos.y = maxY;
-        if (pos.y < minY) pos.y = minY;
-
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
         rbPlayers.position = pos;
     }
 

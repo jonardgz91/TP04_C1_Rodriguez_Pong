@@ -214,7 +214,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: a61423225972de8439127cc1da5cc13a, type: 2}
+  m_Material: {fileID: 6200000, guid: 489e759a6f90d1f4fa331889986e8c40, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -327,8 +327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: 9.349, y: 500}
+  m_SizeDelta: {x: 231.301, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &270253487
 MonoBehaviour:
@@ -525,7 +525,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: a61423225972de8439127cc1da5cc13a, type: 2}
+  m_Material: {fileID: 6200000, guid: 489e759a6f90d1f4fa331889986e8c40, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -602,8 +602,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -620,8 +620,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -990,6 +990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 557573264}
+  - component: {fileID: 557573268}
   - component: {fileID: 557573267}
   - component: {fileID: 557573266}
   - component: {fileID: 557573265}
@@ -1102,6 +1103,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557573263}
   m_CullTransparentMesh: 1
+--- !u!114 &557573268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557573263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394b65b24448e1843b87ed39faee416d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BtnMainMen
+  textMainMenuBtn: {fileID: 394263585}
+  btnMainMenu: {fileID: 557573265}
 --- !u!1 &615242176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,7 +1897,6 @@ MonoBehaviour:
   textContinue: {fileID: 1958024098}
   textTimer: {fileID: 270253487}
   ball: {fileID: 1437184340}
-  textMainMenuBtn: {fileID: 394263585}
   btnMainMenu: {fileID: 557573265}
 --- !u!1 &1440335176
 GameObject:
@@ -2713,7 +2727,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4363240586815045338}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2874,7 +2888,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7781416978960294486}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
