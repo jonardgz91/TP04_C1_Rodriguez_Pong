@@ -2,17 +2,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ColorChange : MonoBehaviour
+public class BtnColorChange : MonoBehaviour
 {
-    [SerializeField] private PlayerDataSo player1;
-    [SerializeField] private PlayerDataSo player2;
+    [SerializeField] private PlayersColorChange player1ColorChange;
+    [SerializeField] private PlayersColorChange player2ColorChange;
     [SerializeField] private Button player1ChangeColor;
     [SerializeField] private TMP_Text textPlayer1OverColor;
     [SerializeField] private TMP_Text textP1ChangeColorBtn;
     [SerializeField] private Button player2ChangeColor;
     [SerializeField] private TMP_Text textPlayer2OverColor;
     [SerializeField] private TMP_Text textP2ChangeColorBtn;
-    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
@@ -22,9 +21,6 @@ public class ColorChange : MonoBehaviour
 
     private void Start()
     {
-        //spriteRenderer.color = player1.color;
-        //spriteRenderer.color = player2.color;
-
         textPlayer1OverColor.text = "Color del jugador 1";
         textPlayer2OverColor.text = "Color del jugador 2";
 
@@ -40,17 +36,11 @@ public class ColorChange : MonoBehaviour
 
     private void OnPlayer1ChangeColor()
     {
-        float r = Random.Range(0f, 1f);
-        float g = Random.Range(0f, 1f);
-        float b = Random.Range(0f, 1f);
-        player1.color = new Color(r, g, b);
+        player1ColorChange.RandomColor();
     }
 
     private void OnPlayer2ChangeColor()
     {
-        float r = Random.Range(0f, 1f);
-        float g = Random.Range(0f, 1f);
-        float b = Random.Range(0f, 1f);
-        player2.color = new Color(r, g, b);
+        player2ColorChange.RandomColor();
     }
 }

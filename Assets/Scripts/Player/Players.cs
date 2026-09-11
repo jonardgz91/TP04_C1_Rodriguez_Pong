@@ -4,7 +4,6 @@ public class Players : MonoBehaviour
 {
     [SerializeField] private PlayerDataSo player;
     [SerializeField] public Rigidbody2D rbPlayers;
-    //public float maxPlayerSpeed = 10f;
     public float moveSpeed = 2f;
     private SpriteRenderer spriteRenderer;
     private Vector3 playerStartPosition;
